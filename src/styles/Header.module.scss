@@ -1,0 +1,108 @@
+@import "./vars";
+
+.header {
+    height: 80px; 
+}
+
+.Header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    border-bottom: 1px solid $--very-light-pink;
+    height: 80px;
+    width: calc(100% - 48px);
+	top: 0;
+	position: fixed;
+	background-color: #fff;
+    z-index: 1;
+}
+
+.menu {
+    display: none;
+    width: 25px;
+    height: 25px;
+}
+
+.logo-nav {
+    height: 50px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+
+
+.left-nav {
+    display: flex;
+    align-items: center;
+}
+
+.categorias {
+    margin-left: 12px;
+}
+
+.left-nav ul, .right-nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.categorias li a {
+    text-decoration: none;
+    color: $--black;
+    padding: 12px;
+}
+
+.categorias a:hover {
+    color: $--hospital-green;
+    border-bottom: 1px solid $--hospital-green;
+    cursor: pointer;
+}
+
+.shopping-car {
+    width: 22px;
+    
+    
+}
+.nav-shopping-cart {
+    position: relative;
+    cursor: pointer;
+}
+.nav-shopping-cart div {
+    width: 16px;
+    height: 16px;
+    background: $--hospital-green;
+    border-radius: 50%;
+    font-size: $--sm;
+    font-weight: bold;
+    position: absolute;
+    top: -6px;
+    right: -3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $--white;
+
+}
+
+.email {
+    color: $--dark;
+    font-size: $--sm;
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 640px) {
+
+    .categorias, .email, .left-nav ul, .right-nav ul {
+        display: none;
+    }   
+
+    .menu {
+        display: block;
+        opacity: 50%;
+    }
+
+}

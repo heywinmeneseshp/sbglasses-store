@@ -1,0 +1,66 @@
+@import "./vars";
+
+.my-order {
+  display: flex;
+  height: fit-content;
+  place-items: center;
+  justify-content: center;
+}
+
+h2 {
+  font-size: $--lg;
+  margin-bottom: 40px;
+}
+
+.my-order-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  width: 300px;
+}
+
+.my-order-content {
+  display: flex;
+  justify-content: space-between;
+  background: $--text-input-field;
+  margin-bottom: 24px;
+  border-radius: 15px;
+  padding: 0 24px;
+  align-items: center;
+}
+
+.date {
+  margin-bottom: 0;
+}
+
+.articles {
+  margin-top: 0;
+  color: $--very-light-pink;
+}
+
+.date,
+.price {
+  font-weight: bold;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.item p:nth-child(2) {
+  color: $--very-light-pink;
+  font-size: $--sm;
+  text-align: center;
+}
+
+.item p:nth-child(3) {
+  font-weight: bold;
+}
+
+.item img {
+  width: 70px;
+  height: 70px;
+  border-radius: 15px;
+}

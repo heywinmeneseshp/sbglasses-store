@@ -1,0 +1,119 @@
+@import "vars";
+
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    gap: 26px;
+    place-content: center;
+}
+
+.product-card {
+    width: 200px;            
+}
+
+.product-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+    cursor:zoom-in;
+}
+
+.product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.info {
+    margin: 0;
+}
+
+.product-info figure {
+    margin: 0px 6px 0 0;
+    
+}
+
+.logo-carrito {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.info p:nth-child(1) {
+    font-weight: bold;
+    font-size: $--md;
+    margin-top: 0px;
+    margin-bottom: 4px;
+}
+
+.info p:nth-child(2) {
+    font-size: $--sm;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: $--very-light-pink;
+    cursor: pointer;
+}
+
+.circle-card {
+    width: 22px;
+    height: 22px;
+    background: $--hospital-green;
+    border-radius: 50%;
+    font-size: $--sm;
+    font-weight: bold;
+    position: absolute;
+    top: -4px;
+    right: -2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $--white;
+}
+
+.circle-card-2 {
+    width: 22px;
+    height: 22px;
+    background: #58b47e;
+    border-radius: 50%;
+    font-size: $--sm;
+    font-weight: bold;
+    position: absolute;
+    top: -4px;
+    right: -2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $--white;
+    
+}
+
+.cart-container-card {
+    position: relative;
+    cursor: pointer;
+    z-index: 0;
+}
+
+@media (max-width: 640px) {
+    
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 140px);
+    gap: 26px;
+}
+
+.product-card {
+    width: 140px;            
+}
+
+.product-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+}
+

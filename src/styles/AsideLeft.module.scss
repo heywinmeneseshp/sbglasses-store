@@ -1,0 +1,80 @@
+@import "./vars";
+
+.containter-aside-left {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.item-title-aside {
+  font-size: $--lg;
+  margin: 0 0 20px 0;
+  
+}
+
+.img-aside {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.item-aside {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-bottom: 12px;
+}
+
+.details-aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.price-aside {
+  font-weight: bold;
+    font-size: $--sm;
+    margin-top: 0px;
+    margin-bottom: 4px;
+}
+
+.title-aside {
+  font-size: $--md;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: $--very-light-pink;
+    cursor: pointer;
+}
+
+
+#form div {
+  text-align: end;
+}
+
+#form label {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.clasificacion input[type="radio"] {
+  display: none;
+}
+
+.clasificacion label {
+  color: #cccccc;
+}
+
+.clasificacion {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+.clasificacion label:hover,
+.clasificacion label:hover ~ label {
+  color: $--black;
+}
+
+.clasificacion input[type="radio"]:checked ~ label {
+  color: $--hospital-green;
+}

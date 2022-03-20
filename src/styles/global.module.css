@@ -1,0 +1,26 @@
+
+/*
+$primary-dark: #836991;
+$primary-light: #B47EDB;
+$secondary-dark: #F1E5EF;
+$secondary-light: #F9F7F7;
+*/
+
+body {
+    margin: 0;
+    font-family: "Quicksand", sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Layout {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+}
+
+.scrol {
+    height: 80px;
+}
+

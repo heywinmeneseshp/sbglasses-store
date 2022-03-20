@@ -1,0 +1,18 @@
+@import "./vars";
+
+.order-container {
+    display: flex;
+    font-size: $--sm;
+    justify-content: center;
+    margin-bottom: 14px;
+}
+
+#ordenar {
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.flecha {
+    margin-left: 3px;
+    color: $--black;
+}

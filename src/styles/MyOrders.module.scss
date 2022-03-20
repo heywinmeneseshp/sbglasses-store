@@ -1,0 +1,54 @@
+@import "./vars";
+
+
+.my-order {
+  display: flex;
+  height: fit-content;
+  justify-content: center;
+  align-self: center;
+}
+
+h2 {
+  font-size: $--lg;
+  margin-bottom: 40px;
+}
+
+.my-order-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  width: 300px;
+}
+
+.my-order-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12;
+  border-radius: 15px;
+
+  align-items: center;
+}
+
+.date {
+  margin-bottom: 0;
+}
+
+.articles {
+  margin-top: 0;
+  color: $--very-light-pink;
+}
+
+.date,
+.price {
+  font-weight: bold;
+}
+
+.order-price {
+  display: flex;
+  align-items: center;
+}
+
+.order-price img {
+  width: 18px;
+  height: 15px;
+  margin-left: 8px;
+}

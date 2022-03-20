@@ -1,0 +1,54 @@
+@import "./vars";
+
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  color: $--black;
+  font-weight: bold;
+  /*margin-bottom: 24px;*/
+}
+
+.mobile-menu ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-top: 24px;
+}
+
+.mobile-menu ul li {
+  margin-bottom: 24px;
+}
+
+.email-menu-mobile {
+  font-size: $--sm;
+  font-weight: 350 !important;
+}
+
+.mobile-menu ul:nth-child(1) {
+  border-bottom: 1px solid $--very-light-pink;
+}
+
+.sing-out {
+  color: $--hospital-green !important;
+  font-size: $--sm;
+}
+
+@media (max-width: 640px) {
+
+  .mobile-menu {
+    display: flex;
+    height: 550px;
+    margin-top: 70px;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px;
+    background: $--white;
+    z-index: 2;
+    position: relative;
+    border-bottom: 1px solid $--very-light-pink;
+  }
+
+}

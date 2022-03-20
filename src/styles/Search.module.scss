@@ -1,0 +1,19 @@
+@import "vars";
+
+.father-conainter {
+    margin: 30px 0 20px 0;
+}
+
+.search {
+    background-color: $--text-input-field;
+    border: none;
+    border-radius: 8px;
+    height: 10px;
+    font-size: $--sm;
+    padding: 14px;
+    margin-bottom: 12px;
+    width: 250px;
+}
+
+
+

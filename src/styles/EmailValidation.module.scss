@@ -1,0 +1,86 @@
+@import "./vars";
+
+.EmailValidation {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.form-container-email-validation {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  width: 300px;
+  justify-items: center;
+}
+
+.logo-email-validation {
+  width: 150px;
+  justify-self: center;
+  display: none;
+}
+
+.title-email-validation {
+  font-size: $--lg;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.subtitle-email-validation {
+  color: $--very-light-pink;
+  font-size: $--md;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.logo-email-email-validation {
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  background-color: $--text-input-field;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.logo-email-email-validation img {
+  width: 80px;
+  height: 80px;
+}
+
+
+.login-button {
+  background-color: $--hospital-green;
+  border-radius: 8px;
+  border: none;
+  height: 30px;
+  color: white;
+  width: 100%;
+  cursor: pointer;
+  font-size: $--md;
+  font-weight: bold;
+  margin-top: 14px;
+  margin-bottom: 30px;
+}
+
+.resend-email-validation {
+  font-size: $--sm;
+}
+
+.resend-email-validation span {
+  color: $--very-light-pink;
+}
+
+.resend a {
+  color: $--hospital-green;
+  text-decoration: none;
+}
+
+@media (max-width: 640px) {
+  .logo-email-validation {
+    display: block;
+  }
+}
