@@ -1,8 +1,8 @@
-import React, { useContext } from "react";
-
-import shoppingCart from "@icons/shopping_cart.png";
-import AppContext from "../context/AppContext";
-import styles from "@styles/Cards.module.scss";
+import React, { useContext } from 'react';
+import Image from 'next/image';
+import shoppingCart from '@icons/shopping_cart.png';
+import AppContext from '../context/AppContext';
+import styles from '@styles/Cards.module.scss';
 
 const Cards = ({ product }) => {
   const { state, addToCart } = useContext(AppContext);
@@ -11,20 +11,20 @@ const Cards = ({ product }) => {
     addToCart(item);
   };
 
-  const productCounter = item => {
+  const productCounter = (item) => {
     if (state.cart.includes(item)) {
-      const array = state.cart.filter(element => element.id == item.id )
-      return array.length
+      const array = state.cart.filter((element) => element.id == item.id);
+      return array.length;
     } else {
-      return "+"
+      return '+';
     }
-  }
+  };
 
   const verifyItem = (item) => {
     if (state.cart.includes(item)) {
-      return "circle-card-2";
+      return 'circle-card-2';
     } else {
-      return "circle-card";
+      return 'circle-card';
     }
   };
 
@@ -32,7 +32,7 @@ const Cards = ({ product }) => {
     <div className={styles['product-card']}>
       <img
         className={styles['product-img']}
-        src={product.images[0]}
+        src={product?.images[0]}
         alt={product.title}
       />
       <div className={styles['product-info']}>
@@ -40,15 +40,22 @@ const Cards = ({ product }) => {
           <p>${product.price}</p>
           <p>{product.title}</p>
         </div>
-        <div className={styles['cart-container-card']} onClick={() => handleClick(product)}>
-          <figure >
-            <img
+        <div
+          className={styles['cart-container-card']}
+          onClick={() => handleClick(product)}
+        >
+          <figure>
+            <Image
               className={styles['logo-carrito']}
               src={shoppingCart}
               alt="logo-carrito"
+              width={35}
+              height={35}
             />
           </figure>
-          <div className={verifyItem(product)}>{productCounter(product)}</div>
+          <div className={styles[verifyItem(product)]}>
+            {productCounter(product)}
+          </div>
         </div>
       </div>
     </div>

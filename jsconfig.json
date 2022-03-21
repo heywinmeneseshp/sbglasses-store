@@ -8,7 +8,6 @@
            "@containers/*": ["containers/*"],
            "@context/*": ["context/*"],
            "@hooks/*": ["hooks/*"],
-           "@pages/*": ["pages/*"],
            "@public/*": ["public/*"],
            "@styles/*": ["styles/*"],
            "@templates/*": ["templates/*"],

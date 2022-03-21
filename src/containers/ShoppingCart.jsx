@@ -1,4 +1,5 @@
 import React, { useContext, useState } from "react";
+import Link  from 'next/link';
 import AppContext from "@context/AppContext";
 import ItemCart from "@components/ItemCart";
 import styles from "@styles/ShoppingCart.module.scss";
@@ -38,7 +39,7 @@ const ShoppingCart = () => {
             <p className={styles['price-cart']}>${sumTotal()}</p>
 
           </div>
-          <button className={styles['checkout-button']}>Checkout</button>
+          <Link className={styles['checkout-button']} href="/myorder">Checkout</Link>
         </div>
       </div>
     </div>

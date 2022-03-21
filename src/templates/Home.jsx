@@ -6,7 +6,7 @@ import styles from "@styles/Home.module.scss";
 
 const Inicio = () => {
   return (
-    <section id="super-home">
+    <section className={styles["super-home"]}>
       <section className={styles["home-container"]}>
         <div className={styles["one"]}>
           <SearchBar />
