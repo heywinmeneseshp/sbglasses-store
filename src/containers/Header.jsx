@@ -1,9 +1,10 @@
 import React, { useState, useContext } from "react";
+import Image from 'next/image';
 import MenuDesktop from "@components/MenuDesktop";
 import ShoppingCart from "@containers/ShoppingCart";
 import MenuMobile from "@containers/MenuMobile";
 import AppContext from "@context/AppContext";
-//Importar imagenes
+//Importar Imagenes
 import shopping_cart from "@icons/shopping_cart.png";
 import menu from "@icons/icon_menu.png";
 import logo from "@logos/logoTienda.png";
@@ -32,9 +33,9 @@ const Header = () => {
   return (
     <div className={styles["header"]}>
       <nav className={styles["Header"]}>
-        <img className={styles["menu"]} src={menu} alt="icono-menu" onClick={()=>handleToggleMenu()}/>
+        <Image className={styles["menu"]} src={menu} alt="icono-menu" onClick={()=>handleToggleMenu()}/>
         <div className={styles["left-nav"]}>
-          <img className={styles["logo-nav"]} src={logo} alt="logo" />
+          <Image className={styles["logo-nav"]} src={logo} alt="logo" />
           <ul className={styles["categorias"]}>
             <li>
               <a href="">Todas</a>
@@ -62,7 +63,7 @@ const Header = () => {
               craken@example.com
             </li>
             <li className={styles["nav-shopping-cart"]} onClick={handleToggleOrdes}>
-              <img className={styles["shopping-car"]} src={shopping_cart} alt="" />
+              <Image className={styles["shopping-car"]} src={shopping_cart} alt="" />
               {state.cart.length > 0 ? <div>{state.cart.length}</div> : null}
             </li>
           </ul>

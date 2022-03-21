@@ -10,7 +10,7 @@ const ProducList = () => {
   const products = useGetProducts(API);
   
   return (
-    <div className={styles.cards-container}>
+    <div className={styles['cards-container']}>
       {products.map( (product, key) => (
         <Card product={product} key={key} />
       ))}

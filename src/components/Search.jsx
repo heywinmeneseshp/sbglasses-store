@@ -3,7 +3,7 @@ import styles from "@styles/Search.module.scss";
 
 const Search = () => {
   return (
-    <div className={styles.father-conainter}>
+    <div className={styles['father-conainter']}>
         <input
           className={styles.search}
           type="text"

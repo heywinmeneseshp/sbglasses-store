@@ -5,8 +5,8 @@ import styles from "@styles/SearchBar.module.scss";
 
 const SearchBar = () => {
   return (
-    <div className={styles.search-bar}>
-      <div className={styles.search-container}>
+    <div className={styles['search-bar']}>
+      <div className={styles['search-container']}>
         <Search></Search>
       </div>
       <div>

@@ -3,20 +3,20 @@ import styles from "@styles/AsideLeft.module.scss";
 
 const ItemAside = () => {
   return (
-    <div className={styles.item-aside}>
+    <div className={styles['item-aside']}>
       <div>
         <img
-          className={styles.img-aside}
+          className={styles['img-aside']}
           src="https://placeimg.com/640/480/any?r=0.032824517284979704"
           alt=""
         />
       </div>
-      <div className={styles.details-aside}>
-        <div className={styles.title-aside}>Refined Steel Table</div>
-        <div className={styles.price-aside}>$250</div>
+      <div className={styles['details-aside']}>
+        <div className={styles['title-aside']}>Refined Steel Table</div>
+        <div className={styles['price-aside']}>$250</div>
 
         <form id="form">
-          <div className={styles.clasificacion}>
+          <div className={styles['clasificacion']}>
             <input id="radio1" type="radio" name="estrellas" value="5" />
             <label htmlFor="radio1">★</label>
             <input id="radio2" type="radio" name="estrellas" value="4" />

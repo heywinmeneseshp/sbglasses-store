@@ -29,26 +29,26 @@ const Cards = ({ product }) => {
   };
 
   return (
-    <div className={styles.product-card}>
+    <div className={styles['product-card']}>
       <img
-        className={styles.product-img}
+        className={styles['product-img']}
         src={product.images[0]}
         alt={product.title}
       />
-      <div className={styles.product-info}>
+      <div className={styles['product-info']}>
         <div className={styles.info}>
           <p>${product.price}</p>
           <p>{product.title}</p>
         </div>
-        <div className={styles.cart-container-card} onClick={() => handleClick(product)}>
+        <div className={styles['cart-container-card']} onClick={() => handleClick(product)}>
           <figure >
             <img
-              className={styles.logo-carrito}
+              className={styles['logo-carrito']}
               src={shoppingCart}
               alt="logo-carrito"
             />
           </figure>
-          <div className={styles.verifyItem(product)}>{productCounter(product)}</div>
+          <div className={verifyItem(product)}>{productCounter(product)}</div>
         </div>
       </div>
     </div>
