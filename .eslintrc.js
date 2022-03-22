@@ -9,9 +9,9 @@ module.exports = {
   extends: [
     "eslint:recommended",
     "plugin:jsx-a11y/recommended",
-    "pluging:prettier/recommended",
+    "plugin:prettier/recommended",
     "next",
-    "next/core-web-vitals"
+    "next/core-web-vitals",
   ],
   rules: {
     "semi" : ["error", "always"]

@@ -1,8 +1,13 @@
+import Head from 'next/head';
 import React from "react";
 import styles from "@styles/MyOrder.module.scss"
 
 const MyOrder = () => {
   return (
+    <>
+    <Head>
+      <title>Checkout</title>
+    </Head>
     <div>
       <div className={styles["my-order"]}>
         <div className={styles["my-order-container"]}>
@@ -44,6 +49,7 @@ const MyOrder = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
