@@ -3,11 +3,11 @@ import Card from "@components/Cards";
 import useGetProducts from "@hooks/useGetProducts";
 import styles from '@styles/Cards.module.scss';
 
-const API = "https://api.escuelajs.co/api/v1/products"
 
-const ProducList = () => {
 
-  const products = useGetProducts(API);
+const ProducList = ({number}) => {
+
+  const products = useGetProducts(number);
   
   return (
     <div className={styles['cards-container']}>

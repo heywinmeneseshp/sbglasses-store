@@ -19,15 +19,15 @@ const useInitialState = () => {
     setState({
       ...state,
       cart: state.cart.filter( (_, index) => index != indexValue )
-    })
-  }
+    });
+  };
 
   const openWindows = () => {
     setState({
       ...state,
       windows: !state.windows
-    })
-}
+    });
+};
 
   return {
     state,

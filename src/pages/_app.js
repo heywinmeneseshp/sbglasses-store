@@ -1,7 +1,7 @@
 import '../styles/globals.css';
-import Header from '@containers/Header'
+import Header from '@containers/Header';
 import AppContext from '@context/AppContext';
-import useInitialState from '@hooks/useInitialState'
+import useInitialState from '@hooks/useInitialState';
 
 function MyApp({ Component, pageProps }) {
   const initialState = useInitialState();

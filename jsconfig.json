@@ -12,7 +12,8 @@
            "@styles/*": ["styles/*"],
            "@templates/*": ["templates/*"],
            "@logos/*": ["assets/logos/*"],
-           "@icons/*": ["assets/icons/*"]
+           "@icons/*": ["assets/icons/*"],
+           "@services/*": ["services/*"]
         }
     }
 }

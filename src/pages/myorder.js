@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import React from "react";
-import styles from "@styles/MyOrder.module.scss"
+import styles from "@styles/MyOrder.module.scss";
 
 const MyOrder = () => {
   return (

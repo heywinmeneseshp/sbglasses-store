@@ -5,12 +5,7 @@ class MyDocument extends Document {
     return (
       <Html lang="es">
         <Head>
-         
-
-          <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-L7XDP0BN0D"
-          ></script>
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-L7XDP0BN0D"></script>
           <script
             dangerouslySetInnerHTML={{
               __html: `window.dataLayer = window.dataLayer || [];
